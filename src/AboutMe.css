@@ -50,6 +50,15 @@
   display: none;
 }
 
+.description {
+  margin-top: 20px;
+  color: black;
+  font-size: 14px;
+  font-family: "Hanken Grotesk", serif;
+  text-align: left;
+  line-height: 20px;
+}
+
 @media (min-width: 1024px) {
   .first_div_about {
     display: flex;

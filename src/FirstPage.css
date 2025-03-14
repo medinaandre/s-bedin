@@ -65,14 +65,14 @@
 }
 
 .second_title {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 10px;
   color: #23547b;
   font-family: "Playfair Display", serif;
   text-align: left;
-  line-height: 24px;
+  line-height: normal;
 }
 
 b {
@@ -165,9 +165,10 @@ b {
   }
 
   .second_title {
-    font-size: 46px;
+    font-size: 50px;
     line-height: normal;
     margin-top: 40px;
+    margin-bottom: 30px;
   }
 
   .main_image {
