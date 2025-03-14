@@ -1,0 +1,191 @@
+.help-section {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #23547b;
+}
+
+.help_first {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.help_title {
+  color: #f6f1ed;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.help_title::before {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 81vw; /* Linha começa do início da página */
+  width: 12vw; /* Vai até a posição do título */
+  height: 1px;
+  background-color: #a2a9cf;
+}
+
+.help_subtitle {
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
+  color: #a2a9cf;
+  font-family: "Playfair Display", serif;
+  padding-left: 30px;
+}
+
+.help_subtitle::before {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: -150vw;
+  width: 155vw;
+  height: 1px;
+  background-color: #a2a9cf;
+}
+
+.card {
+  margin-top: 30px;
+}
+
+.card_title {
+  background-color: #b9afa5;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f6f1ed;
+  display: flex;
+  text-align: left;
+  margin-right: 40px;
+  margin-left: -43px;
+  padding-left: 43px;
+  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card_list {
+  margin-top: 15px;
+  padding-left: 20px;
+  color: white;
+  font-size: 16px;
+}
+
+.card_list li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.help-section ul {
+  margin-top: 16px;
+  list-style: disc;
+  padding: 0;
+}
+
+.help-image {
+  display: flex;
+  justify-content: center;
+}
+
+.help_logo {
+  max-width: 35vw;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+@media (min-width: 1024px) {
+  .help-section {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0px 60px 24px;
+  }
+
+  .help-container {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .help_title {
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-left: 22px;
+  }
+
+  .help_title::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 36vw;
+    width: 58vw;
+    height: 2px;
+    background-color: #a2a9cf;
+  }
+
+  .help_subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 22px;
+  }
+
+  .help_subtitle::before {
+    content: "";
+    position: absolute;
+    top: 85%;
+    left: -153vw;
+    width: 154vw;
+    height: 2px;
+    background-color: #a2a9cf;
+  }
+
+  .help-text {
+    flex: 1.25;
+  }
+
+  .help-image {
+    flex: 0.75;
+    display: flex;
+    justify-content: flex-end; /* Mantém a imagem na direita */
+    align-items: center;
+    overflow: hidden; /* Garante que a parte fora da div não apareça */
+    position: relative;
+  }
+
+  .help_logo {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: translateX(
+      50%
+    ); /* Move a imagem para a esquerda, cortando a metade direita */
+    clip-path: inset(0 50% 0 0); /* Corta 50% da imagem do lado direito */
+  }
+
+  .card_title {
+    font-size: 30px;
+    margin-right: 0px;
+    margin-left: -40px;
+    padding-left: 60px;
+    margin-bottom: 30px;
+  }
+
+  .card_list li {
+    margin-bottom: 8px;
+    line-height: normal;
+    font-size: 18px;
+    margin-left: 28px;
+  }
+}

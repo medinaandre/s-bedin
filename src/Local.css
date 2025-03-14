@@ -1,0 +1,128 @@
+.local-container {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #f6f1ed 50%, #b9afa5 100%);
+}
+
+.local-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #23547b;
+  position: relative;
+  display: inline-block;
+}
+
+.local-title::after {
+  content: "";
+  position: absolute;
+  top: 58%;
+  left: 100%; /* Começa logo após o título */
+  margin-left: 10px; /* Dá um pequeno espaçamento */
+  width: 54px; /* Ajuste o tamanho conforme necessário */
+  height: 1px;
+  background-color: #a2a9cf;
+}
+
+.local-subtitle {
+  font-size: 16px;
+  color: #a2a9cf;
+  margin-bottom: 20px;
+}
+
+.local-item {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  gap: 12px; /* Espaçamento entre a linha e o texto */
+  border-left: 2px solid #1f4c6b; /* Define a linha à esquerda */
+  padding-left: 12px;
+}
+
+.local-header {
+  display: flex;
+  align-items: center;
+}
+
+.local-type {
+  font-size: 22px;
+  font-weight: bold;
+  color: #23547b;
+  margin-right: 10px;
+}
+
+.local-divider {
+  width: 20%;
+  height: 1px;
+  background: #a2a9cf;
+}
+
+.local-text {
+  font-size: 14px;
+  color: black;
+  margin-top: 10px;
+  font-family: "Hanken Grotesk", serif;
+  line-height: 24px;
+  max-width: 90%;
+}
+
+.local-address {
+  font-family: "Hanken Grotesk", serif;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o ícone e o texto */
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+.local-icon {
+  width: 18px;
+  height: auto;
+}
+
+.linked-map {
+  border: 0;
+  width: 330px;
+  height: 190px;
+  margin-top: 30px;
+}
+
+@media (min-width: 1024px) {
+  .local-title {
+    font-size: 46px;
+  }
+
+  .local-subtitle {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .local-title::after {
+    width: 283px; /* Ajuste o tamanho conforme necessário */
+    height: 2px;
+  }
+
+  .local-item {
+    margin-top: 20px;
+  }
+
+  .local-type {
+    font-size: 32px;
+    margin-right: 10px;
+  }
+
+  .local-text {
+    font-size: 18px;
+  }
+
+  .local-address {
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+
+  .linked-map {
+    width: 750px;
+    height: 300px;
+  }
+}
